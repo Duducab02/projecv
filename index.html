@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Projeto no console</title>
-    <h1> Projeto no console</h1>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Teste</title>
 </head>
 <body>
-    <script>
-        var começo = "Meu primeiro projeto no console!"
-        console.log(começo)
-        var first_name = "Rambir"
-        var last_name = "Kapoor"
-        var full_name = first_name.concat(last_name)
-        console.log(full_name)
-
-        var a = 10;
-        var b = 5;
-
-        var menornumeroa = Math.min(15, 30) 
-        console.log(menornumeroa)
-        
-        var menornumero = Math.min(5, 10) 
-        console.log(menornumero)
-        var menornumero1 = Math.min(50, 100)
-        console.log(menornumero1)
-        
-        var menornumero2 = Math.min(2, 5)
-        console.log(menornumero2)
-
-    </script>
+    <h1>Lista de convidados</h1>
+    <input type="text"placeholder="insira o nome" id="nomes">
+    <button onclick="enviar()" id="enviar"> Enviar</button>
+    <br>
+    <hr>
+    <div id="mostrarnomes"></div>
+    <br>
+    <hr>
+    <h1>Mostrar os convidados</h1>
+    <button onclick="mostrarnomes()">Mostrar</button>
+    <h1 id="mostrarlistaorganizada"></h1>
+    <br>
+    <hr>
+    <div id="mostrarnomes2"></div>
+    <br>
+    <hr>
+    <button onclick="organizacao()">Lista organizada</button>
+    <hr>
+    <br>
+    <div id="nomesorganizados"></div>  
+    <hr>
+    <br>
+    <input type="text"placeholder="coloque o nome" id="pesquisar">
+    <button onclick="pesquisar()">Pesquisar</button>
+    <br>
+    <hr>
+    <div id="nomepesquisado"></div>
+    <hr>
+    
+   
 </body>
 </html>
